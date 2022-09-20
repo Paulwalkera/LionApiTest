@@ -1,0 +1,558 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后台-佣金列表_20220919194837 - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      text-align: center;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: 后台-佣金列表_20220919194837</h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2022-09-19 19:48:36</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">1.325 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 1.5.8 </td>
+      <td>CPython 3.7.0 </td>
+      <td colspan="2">Windows-10-10.0.18362-SP0</td>
+    </tr>
+    <tr>
+      <th>TOTAL</th>
+      <th>SUCCESS</th>
+      <th>FAILED</th>
+      <th>ERROR</th>
+      <th>SKIPPED</th>
+      <!-- <th>ExpectedFailure</th>
+      <th>UnexpectedSuccess</th> -->
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <!-- <td>0</td>
+      <td>0</td> -->
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>后台-佣金列表</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <th>base_url</th>
+      <td colspan="2">https://test-qmyxcg.myscrm.com.cn</td>
+      <th colspan="2" class="detail">
+        <a class="button" href="#suite_output_1">parameters & output</a>
+        <div id="suite_output_1" class="overlay">
+            <div class="popup">
+                <h2>Parameters and Output</h2>
+                <a class="close" href="#suite_1">&times;</a>
+                <div class="content">
+                  <div style="overflow: auto">
+                      <table>
+                        <tr>
+                          <th>variables</th>
+                          <th>output</th>
+                        </tr>
+                        
+                      </table>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</td>
+      <td colspan="2">后台-佣金列表</td>
+      <td style="text-align:center;width:6em;">812.04 ms</td>
+      <td class="detail">
+
+        <a class="button" href="#popup_log_1_1">log</a>
+        <div id="popup_log_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test-qmyxcg.myscrm.com.cn/api/index.php?r=qmyx%2Fbrokerage%2Fgetlist&token=vwvmjp1457763919
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: python-requests/2.25.1
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>accept</strong>: application/json,text/plain, */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>content-type</strong>: application/x-www-form-urlencoded; charset=UTF-8
+                          </div>
+                          
+                          <div>
+                            <strong>cookie</strong>: test_myscrm_phpsessid=7jlolo4q1fjte594vbcm3dv8q6; path=/; domain=.myscrm.com.cn; secure; HttpOnly
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 158
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>start_timestamp</th>
+                      <td>
+                        
+                          1663588116.6182199
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>data</th>
+                      <td>
+                        
+                          {'brokerage_type': 2, 'isAgency': 0, 'isApproval': 0, 'isoffer': 0, 'p_projectId': '39f6699d-edcd-6c55-0218-2fee2c402547', 'pageIndex': 1, 'pageSize': 10, 'time_type': 1, 'token': 'vwvmjp1457763919'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>params</th>
+                      <td>
+                        
+                          {'r': 'qmyx/brokerage/getlist', 'token': 'vwvmjp1457763919'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          brokerage_type=2&isAgency=0&isApproval=0&isoffer=0&p_projectId=39f6699d-edcd-6c55-0218-2fee2c402547&pageIndex=1&pageSize=10&time_type=1&token=vwvmjp1457763919
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>User-Agent</strong>: python-requests/2.25.1
+                            </div>
+                            
+                            <div>
+                              <strong>Accept-Encoding</strong>: gzip, deflate
+                            </div>
+                            
+                            <div>
+                              <strong>accept</strong>: application/json,text/plain, */*
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>content-type</strong>: application/x-www-form-urlencoded; charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>cookie</strong>: test_myscrm_phpsessid=7jlolo4q1fjte594vbcm3dv8q6; path=/; domain=.myscrm.com.cn; secure; HttpOnly
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 158
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_size</th>
+                        <td>
+                          
+                            26480
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>response_time_ms</th>
+                        <td>
+                          
+                            812.04
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>elapsed_ms</th>
+                        <td>
+                          
+                            796.737
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content</th>
+                        <td>
+                          
+                            {"retCode":"0","retMsg":"errorCode:0,","data":{"data":[{"channel_id":1,"CreatedOn":"2022-04-24 11:35:01","check_date":"2022-09-15 17:30:55","amount":"0.00","ApprovalBy":"mysoftadmin","ApprovalOn":"2022-09-16 16:00:43","offerName":"","OfferOn":null,"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","broker_name":"chengy","broker_tel":"18576426164","broGenderText":"女","cre_no":"421202199312257045","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"招商银行","bank_account":"6225760000008888","bank_sub_branch":"招商银行宝安支行","bank_address":"广东省深圳市宝安区","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg","b_regbroker_cst_projId":"3a036bcf-f3a3-8ba5-7a4a-b4da92e8b7f4","store_code":"","identity":"9004","belongs_company":"","clueId":"1074057","cst_id":"3a036bcf-f3a3-99d5-9e53-4a638ec357d0","cst_name":"沙雕_xdd","mobile_tel":"1890723417","mobile_tels":"1890723417","genderText":"男","b_regbroker_cst_trade_recordId":"3a0652a9-7d41-7e0f-2662-2a6b6701e200","cj_price":"6666666.00","trade_guid":"3a0652a9-79a0-0826-50ea-22036c33f7df","product_type":null,"room":"奥利给-东区-A1栋-2单元-5-504","rg_date":"2022-09-15 00:00:00","qy_date":"2022-09-15 00:00:00","approve_fail_reason":null,"trade_amount":"6666666.00","room_guid":"049a3b43-d65c-3a48-ba44-7bed9e0d3daa","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a0652a9-83bb-5761-9315-4cc29ad9935d","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"chengy","broker_tel":"18576426164","cre_no":"421202199312257045","broGenderText":"女"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:58:48","check_date":"2022-04-24 15:48:10","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a52-6f41-70ff-1973-635ba59fe8e0","store_code":"","identity":"9001","belongs_company":"","clueId":"1059943","cst_id":"3a015a52-6f41-a4c9-b7b0-be1be71f359e","cst_name":"下发48","mobile_tel":"13816184566","mobile_tels":"13816184566","genderText":"男","b_regbroker_cst_trade_recordId":"3a015a63-8842-f3e6-c3b7-4efc043ea6b9","cj_price":"2222222.00","trade_guid":"3a015a63-8591-c8f9-d8f3-9dac1d7a6956","product_type":null,"room":"奥利给-宝安区-B252栋-252-8252","rg_date":"2022-01-11 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"7c63bc2c-9e5c-3933-bf53-b1289449d855","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1.99","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"1.99","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1.99","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036cb7-b166-f3d9-b403-17a8eb87dd7e","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:55:26","check_date":"2022-04-24 15:43:12","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4f-599c-4c3d-21f8-f25d5b502e2b","store_code":"","identity":"9001","belongs_company":"","clueId":"1059935","cst_id":"3a015a4f-599c-b6cb-b15c-4d2519f99e06","cst_name":"下发48","mobile_tel":"13812471418","mobile_tels":"13812471418","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e78-0d67-5372-f045-27de463f7dda","cj_price":"2222222.00","trade_guid":"3a015e78-0af2-2fa4-6f86-fc3d5b57700f","product_type":null,"room":"奥利给-宝安区-B82栋-82-8082","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"6a413011-5c8c-30fb-8bbe-d7e062f6b0b5","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036cb3-25bb-6d09-08f9-8940a9e6a50e","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:51:20","check_date":"2022-04-24 14:36:17","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4b-97ab-a127-73f5-7798745ef981","store_code":"","identity":"9001","belongs_company":"","clueId":"1059933","cst_id":"3a015a4b-97ab-bfd4-301b-90013f179a7a","cst_name":"qudao","mobile_tel":"13816022029","mobile_tels":"13816022029","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e83-9df0-b791-06db-5b5cac7807ef","cj_price":"2222222.00","trade_guid":"3a015e83-9bd7-d76c-cabf-749929cbb0a8","product_type":null,"room":"奥利给-东区-A2栋-1单元-8-801","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"05d72f73-99f4-3838-b210-1f3dc06daa2b","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-df9b-f69f-276c-478b368554bb","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:52:55","check_date":"2022-04-24 14:36:17","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4d-0936-2d97-b9e3-11c9ca87baff","store_code":"","identity":"9001","belongs_company":"","clueId":"1059934","cst_id":"3a015a4d-0936-2bc2-f194-76c42a87f17c","cst_name":"下发48","mobile_tel":"13814307247","mobile_tels":"13814307247","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e81-f3e5-7659-936c-767ccf701294","cj_price":"2222222.00","trade_guid":"3a015e81-eff1-8791-0fa1-c6c2f8a3156b","product_type":null,"room":"奥利给-东区-A2栋-1单元-2-204","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"00386b96-8c1c-3bc1-a69a-5a7cdd54e958","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-e24b-5288-8ee4-f97709b330ff","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:50:26","check_date":"2022-04-24 14:36:16","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4a-c6c6-c708-d4a6-822091ef0267","store_code":"","identity":"9001","belongs_company":"","clueId":"1059932","cst_id":"3a015a4a-c6c6-e406-30ac-ff20b18c841e","cst_name":"qudao","mobile_tel":"13816209543","mobile_tels":"13816209543","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e86-170b-20b9-1929-909455cc8c9d","cj_price":"2222222.00","trade_guid":"3a015e86-1575-e8af-b492-151118987c09","product_type":null,"room":"奥利给-东区-A2栋-1单元-1-102","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"081e58a3-ac33-32a0-b5f0-9a7462bcfebf","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-dccc-19bd-39ff-9c0aed310b51","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 10:31:20","check_date":"2022-04-24 14:36:15","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39e6e5e4-c1cf-806e-0204-c1453ae39ae2","broker_name":"公融","broker_tel":"15580841111","broGenderText":"男","cre_no":"445122198812290012","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"交通银行","bank_account":"6333333333333333333","bank_sub_branch":"深圳","bank_address":"广东深圳","card_img":"https://test-qmyxcg.myscrm.cn/uploads/vkcypj1415069022/5003/2016/03/31/39d6dedd-f36c-4105-3898-aa26fc7cc754_bank.jpg","b_regbroker_cst_projId":"3a015926-9ea3-1522-b726-82c0cd1b8604","store_code":"","identity":"9004","belongs_company":"","clueId":"1059894","cst_id":"3a015926-9ea3-7fe6-3ce2-d4e0f974ce35","cst_name":"沙雕_4wx","mobile_tel":"18907213030","mobile_tels":"18907213030","genderText":"男","b_regbroker_cst_trade_recordId":"3a017edc-fe3a-1f90-c21c-a8d103d9eea8","cj_price":"2222222.00","trade_guid":"3a017edc-fac9-7b75-ff61-f9c4d7bb0ffb","product_type":null,"room":"奥利给-东区-A2栋-2单元-1-103","rg_date":"2022-01-18 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"5d480dfa-cccd-3c23-9149-7259a82d89bf","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39e6e5e4-c1cf-806e-0204-c1453ae39ae2","brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1999.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-d83c-6691-7c35-8f9c4aae13bf","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"公融","broker_tel":"15580841111","cre_no":"445122198812290012","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-12 11:35:55","check_date":"2022-04-24 14:36:15","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","broker_name":"chengy","broker_tel":"18576426164","broGenderText":"女","cre_no":"421202199312257045","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"招商银行","bank_account":"6225760000008888","bank_sub_branch":"招商银行宝安支行","bank_address":"广东省深圳市宝安区","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg","b_regbroker_cst_projId":"3a015e88-1c09-c24c-a375-2b0bbeb78475","store_code":"","identity":"9004","belongs_company":"","clueId":"1059962","cst_id":"3a015e88-1c09-dc41-52b8-1961c6d39601","cst_name":"祁护摘","mobile_tel":"15012397568","mobile_tels":"15012397568","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e88-38de-f8e1-35bf-3e2c2950284e","cj_price":"2222222.00","trade_guid":"3a015e88-3643-527d-766e-f8c1f0072b1b","product_type":null,"room":"奥利给-东区-A2栋-1单元-2-202","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"1758d756-bbe1-3161-a3f7-3605e83eb5e7","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1999.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-daed-189c-bef4-cb6cb5b22635","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"chengy","broker_tel":"18576426164","cre_no":"421202199312257045","broGenderText":"女"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2021-11-30 10:46:45","check_date":"2022-04-24 14:36:11","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","broker_name":"chengy","broker_tel":"18576426164","broGenderText":"女","cre_no":"421202199312257045","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"招商银行","bank_account":"6225760000008888","bank_sub_branch":"招商银行宝安支行","bank_address":"广东省深圳市宝安区","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg","b_regbroker_cst_projId":"3a0080e9-a54c-d7f0-2cf2-792c8fb9ead2","store_code":"","identity":"9004","belongs_company":"","clueId":"1058387","cst_id":"3a0080e9-a54c-9c19-b8ca-d8eed6514b9a","cst_name":"亢孕衰","mobile_tel":"16869153074","mobile_tels":"16869153074","genderText":"男","b_regbroker_cst_trade_recordId":"3a02a42e-26aa-c13d-8d54-cefd7a51b4fe","cj_price":"90000.00","trade_guid":"3a02a42e-24d9-e939-d0c3-2738cb5e9883","product_type":null,"room":"奥利给-东区-A1栋-1单元-7-701","rg_date":"2022-03-16 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"90000.00","room_guid":"83acbf74-b82e-31da-8620-0a1fd4e693c0","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1000.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","brokerageTotalAmount":"1000.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1000.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-cc1c-6a24-34c7-f9adea070ee2","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"chengy","broker_tel":"18576426164","cre_no":"421202199312257045","broGenderText":"女"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-04-01 16:06:17","check_date":"2022-04-08 11:55:21","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f77e9f-14cf-4fb3-110e-5eed1c2e8e62","broker_name":"B011","broker_tel":"18576421011","broGenderText":"男","cre_no":null,"broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"","bank_account":"","bank_sub_branch":"","bank_address":"","card_img":"","b_regbroker_cst_projId":"3a02f656-10dd-2c10-9340-6d7f7703388d","store_code":"","identity":"9001","belongs_company":"","clueId":"1070515","cst_id":"3a02f656-10dd-62d3-cd0a-5b538d2a3295","cst_name":"公司级判客_344","mobile_tel":"14602787518","mobile_tels":"14602787518","genderText":"男","b_regbroker_cst_trade_recordId":"3a03197c-c362-928a-b727-90200f111e9a","cj_price":"111111.00","trade_guid":"3a03197b-fa81-1a76-ad49-e6de969ffe50","product_type":null,"room":"奥利给-东区-A2栋-1单元-7-702","rg_date":"2022-04-08 00:00:00","qy_date":"2022-04-08 00:00:00","approve_fail_reason":null,"trade_amount":"1111111.00","room_guid":"fe2a14e5-08ce-3cf8-aad1-6179a45eec9f","isApproval":"0","amountCount":1,"brokerageTotalAmount":"6666.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f77e9f-14cf-4fb3-110e-5eed1c2e8e62","brokerageTotalAmount":"6666.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"6666.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a03197c-c915-b910-8d23-1b8dc23aa66d","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"B011","broker_tel":"18576421011","cre_no":null,"broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""}],"total":"69","isPopup":0,"proTypeByTradeArr":[],"proTypeByMyparamvalue":["全部"],"ProtypeRelationData":["住宅"],"showOfferStatusLevel":0,"commisionWays":[{"key":0,"text":"积分兑换"},{"key":1,"text":"现金支付"},{"key":3,"text":"购房券"}],"hasBindErp":false},"isShow":false,"isDisabled":false}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            
+                              <pre></pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test-qmyxcg.myscrm.com.cn/api/index.php?r=qmyx%2Fbrokerage%2Fgetlist&token=vwvmjp1457763919
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'acw_tc': '2f624a2516635881168346078e31a5ca7c241505679835f60f4f2c630920fe'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                            {"retCode":"0","retMsg":"errorCode:0,","data":{"data":[{"channel_id":1,"CreatedOn":"2022-04-24 11:35:01","check_date":"2022-09-15 17:30:55","amount":"0.00","ApprovalBy":"mysoftadmin","ApprovalOn":"2022-09-16 16:00:43","offerName":"","OfferOn":null,"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","broker_name":"chengy","broker_tel":"18576426164","broGenderText":"女","cre_no":"421202199312257045","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"招商银行","bank_account":"6225760000008888","bank_sub_branch":"招商银行宝安支行","bank_address":"广东省深圳市宝安区","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg","b_regbroker_cst_projId":"3a036bcf-f3a3-8ba5-7a4a-b4da92e8b7f4","store_code":"","identity":"9004","belongs_company":"","clueId":"1074057","cst_id":"3a036bcf-f3a3-99d5-9e53-4a638ec357d0","cst_name":"沙雕_xdd","mobile_tel":"1890723417","mobile_tels":"1890723417","genderText":"男","b_regbroker_cst_trade_recordId":"3a0652a9-7d41-7e0f-2662-2a6b6701e200","cj_price":"6666666.00","trade_guid":"3a0652a9-79a0-0826-50ea-22036c33f7df","product_type":null,"room":"奥利给-东区-A1栋-2单元-5-504","rg_date":"2022-09-15 00:00:00","qy_date":"2022-09-15 00:00:00","approve_fail_reason":null,"trade_amount":"6666666.00","room_guid":"049a3b43-d65c-3a48-ba44-7bed9e0d3daa","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a0652a9-83bb-5761-9315-4cc29ad9935d","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"chengy","broker_tel":"18576426164","cre_no":"421202199312257045","broGenderText":"女"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:58:48","check_date":"2022-04-24 15:48:10","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a52-6f41-70ff-1973-635ba59fe8e0","store_code":"","identity":"9001","belongs_company":"","clueId":"1059943","cst_id":"3a015a52-6f41-a4c9-b7b0-be1be71f359e","cst_name":"下发48","mobile_tel":"13816184566","mobile_tels":"13816184566","genderText":"男","b_regbroker_cst_trade_recordId":"3a015a63-8842-f3e6-c3b7-4efc043ea6b9","cj_price":"2222222.00","trade_guid":"3a015a63-8591-c8f9-d8f3-9dac1d7a6956","product_type":null,"room":"奥利给-宝安区-B252栋-252-8252","rg_date":"2022-01-11 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"7c63bc2c-9e5c-3933-bf53-b1289449d855","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1.99","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"1.99","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1.99","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036cb7-b166-f3d9-b403-17a8eb87dd7e","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:55:26","check_date":"2022-04-24 15:43:12","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4f-599c-4c3d-21f8-f25d5b502e2b","store_code":"","identity":"9001","belongs_company":"","clueId":"1059935","cst_id":"3a015a4f-599c-b6cb-b15c-4d2519f99e06","cst_name":"下发48","mobile_tel":"13812471418","mobile_tels":"13812471418","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e78-0d67-5372-f045-27de463f7dda","cj_price":"2222222.00","trade_guid":"3a015e78-0af2-2fa4-6f86-fc3d5b57700f","product_type":null,"room":"奥利给-宝安区-B82栋-82-8082","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"6a413011-5c8c-30fb-8bbe-d7e062f6b0b5","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036cb3-25bb-6d09-08f9-8940a9e6a50e","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:51:20","check_date":"2022-04-24 14:36:17","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4b-97ab-a127-73f5-7798745ef981","store_code":"","identity":"9001","belongs_company":"","clueId":"1059933","cst_id":"3a015a4b-97ab-bfd4-301b-90013f179a7a","cst_name":"qudao","mobile_tel":"13816022029","mobile_tels":"13816022029","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e83-9df0-b791-06db-5b5cac7807ef","cj_price":"2222222.00","trade_guid":"3a015e83-9bd7-d76c-cabf-749929cbb0a8","product_type":null,"room":"奥利给-东区-A2栋-1单元-8-801","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"05d72f73-99f4-3838-b210-1f3dc06daa2b","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-df9b-f69f-276c-478b368554bb","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:52:55","check_date":"2022-04-24 14:36:17","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4d-0936-2d97-b9e3-11c9ca87baff","store_code":"","identity":"9001","belongs_company":"","clueId":"1059934","cst_id":"3a015a4d-0936-2bc2-f194-76c42a87f17c","cst_name":"下发48","mobile_tel":"13814307247","mobile_tels":"13814307247","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e81-f3e5-7659-936c-767ccf701294","cj_price":"2222222.00","trade_guid":"3a015e81-eff1-8791-0fa1-c6c2f8a3156b","product_type":null,"room":"奥利给-东区-A2栋-1单元-2-204","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"00386b96-8c1c-3bc1-a69a-5a7cdd54e958","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-e24b-5288-8ee4-f97709b330ff","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 15:50:26","check_date":"2022-04-24 14:36:16","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","broker_name":"夜天","broker_tel":"15814632003","broGenderText":"男","cre_no":"110101199003078013","broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"dasdas","bank_account":"51513484462131","bank_sub_branch":"asdadsad","bank_address":"sadasd","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg","b_regbroker_cst_projId":"3a015a4a-c6c6-c708-d4a6-822091ef0267","store_code":"","identity":"9001","belongs_company":"","clueId":"1059932","cst_id":"3a015a4a-c6c6-e406-30ac-ff20b18c841e","cst_name":"qudao","mobile_tel":"13816209543","mobile_tels":"13816209543","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e86-170b-20b9-1929-909455cc8c9d","cj_price":"2222222.00","trade_guid":"3a015e86-1575-e8af-b492-151118987c09","product_type":null,"room":"奥利给-东区-A2栋-1单元-1-102","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"081e58a3-ac33-32a0-b5f0-9a7462bcfebf","isApproval":"0","amountCount":1,"brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f71c03-363d-727a-adc7-cb3cba84d72c","brokerageTotalAmount":"0.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"0.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-dccc-19bd-39ff-9c0aed310b51","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"夜天","broker_tel":"15814632003","cre_no":"110101199003078013","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-11 10:31:20","check_date":"2022-04-24 14:36:15","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39e6e5e4-c1cf-806e-0204-c1453ae39ae2","broker_name":"公融","broker_tel":"15580841111","broGenderText":"男","cre_no":"445122198812290012","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"交通银行","bank_account":"6333333333333333333","bank_sub_branch":"深圳","bank_address":"广东深圳","card_img":"https://test-qmyxcg.myscrm.cn/uploads/vkcypj1415069022/5003/2016/03/31/39d6dedd-f36c-4105-3898-aa26fc7cc754_bank.jpg","b_regbroker_cst_projId":"3a015926-9ea3-1522-b726-82c0cd1b8604","store_code":"","identity":"9004","belongs_company":"","clueId":"1059894","cst_id":"3a015926-9ea3-7fe6-3ce2-d4e0f974ce35","cst_name":"沙雕_4wx","mobile_tel":"18907213030","mobile_tels":"18907213030","genderText":"男","b_regbroker_cst_trade_recordId":"3a017edc-fe3a-1f90-c21c-a8d103d9eea8","cj_price":"2222222.00","trade_guid":"3a017edc-fac9-7b75-ff61-f9c4d7bb0ffb","product_type":null,"room":"奥利给-东区-A2栋-2单元-1-103","rg_date":"2022-01-18 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"5d480dfa-cccd-3c23-9149-7259a82d89bf","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39e6e5e4-c1cf-806e-0204-c1453ae39ae2","brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1999.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-d83c-6691-7c35-8f9c4aae13bf","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"公融","broker_tel":"15580841111","cre_no":"445122198812290012","broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-01-12 11:35:55","check_date":"2022-04-24 14:36:15","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","broker_name":"chengy","broker_tel":"18576426164","broGenderText":"女","cre_no":"421202199312257045","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"招商银行","bank_account":"6225760000008888","bank_sub_branch":"招商银行宝安支行","bank_address":"广东省深圳市宝安区","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg","b_regbroker_cst_projId":"3a015e88-1c09-c24c-a375-2b0bbeb78475","store_code":"","identity":"9004","belongs_company":"","clueId":"1059962","cst_id":"3a015e88-1c09-dc41-52b8-1961c6d39601","cst_name":"祁护摘","mobile_tel":"15012397568","mobile_tels":"15012397568","genderText":"男","b_regbroker_cst_trade_recordId":"3a015e88-38de-f8e1-35bf-3e2c2950284e","cj_price":"2222222.00","trade_guid":"3a015e88-3643-527d-766e-f8c1f0072b1b","product_type":null,"room":"奥利给-东区-A2栋-1单元-2-202","rg_date":"2022-01-12 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"2222222.00","room_guid":"1758d756-bbe1-3161-a3f7-3605e83eb5e7","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","brokerageTotalAmount":"1999.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1999.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-daed-189c-bef4-cb6cb5b22635","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"chengy","broker_tel":"18576426164","cre_no":"421202199312257045","broGenderText":"女"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2021-11-30 10:46:45","check_date":"2022-04-24 14:36:11","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","broker_name":"chengy","broker_tel":"18576426164","broGenderText":"女","cre_no":"421202199312257045","broker_capacity_des":"自由经纪人","belongs_company_text":"","store_name":"","bank_name":"招商银行","bank_account":"6225760000008888","bank_sub_branch":"招商银行宝安支行","bank_address":"广东省深圳市宝安区","card_img":"https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg","b_regbroker_cst_projId":"3a0080e9-a54c-d7f0-2cf2-792c8fb9ead2","store_code":"","identity":"9004","belongs_company":"","clueId":"1058387","cst_id":"3a0080e9-a54c-9c19-b8ca-d8eed6514b9a","cst_name":"亢孕衰","mobile_tel":"16869153074","mobile_tels":"16869153074","genderText":"男","b_regbroker_cst_trade_recordId":"3a02a42e-26aa-c13d-8d54-cefd7a51b4fe","cj_price":"90000.00","trade_guid":"3a02a42e-24d9-e939-d0c3-2738cb5e9883","product_type":null,"room":"奥利给-东区-A1栋-1单元-7-701","rg_date":"2022-03-16 00:00:00","qy_date":null,"approve_fail_reason":null,"trade_amount":"90000.00","room_guid":"83acbf74-b82e-31da-8620-0a1fd4e693c0","isApproval":"0","amountCount":1,"brokerageTotalAmount":"1000.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f5f742-4cca-a98a-d392-0b066c6d5d60","brokerageTotalAmount":"1000.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"1000.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a036c75-cc1c-6a24-34c7-f9adea070ee2","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"chengy","broker_tel":"18576426164","cre_no":"421202199312257045","broGenderText":"女"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"自由经纪人","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""},{"channel_id":1,"CreatedOn":"2022-04-01 16:06:17","check_date":"2022-04-08 11:55:21","amount":"0.00","ApprovalBy":"系统自动","ApprovalOn":null,"offerName":"","OfferOn":null,"regbroker_id":"39f77e9f-14cf-4fb3-110e-5eed1c2e8e62","broker_name":"B011","broker_tel":"18576421011","broGenderText":"男","cre_no":null,"broker_capacity_des":"老业主000","belongs_company_text":"","store_name":"","bank_name":"","bank_account":"","bank_sub_branch":"","bank_address":"","card_img":"","b_regbroker_cst_projId":"3a02f656-10dd-2c10-9340-6d7f7703388d","store_code":"","identity":"9001","belongs_company":"","clueId":"1070515","cst_id":"3a02f656-10dd-62d3-cd0a-5b538d2a3295","cst_name":"公司级判客_344","mobile_tel":"14602787518","mobile_tels":"14602787518","genderText":"男","b_regbroker_cst_trade_recordId":"3a03197c-c362-928a-b727-90200f111e9a","cj_price":"111111.00","trade_guid":"3a03197b-fa81-1a76-ad49-e6de969ffe50","product_type":null,"room":"奥利给-东区-A2栋-1单元-7-702","rg_date":"2022-04-08 00:00:00","qy_date":"2022-04-08 00:00:00","approve_fail_reason":null,"trade_amount":"1111111.00","room_guid":"fe2a14e5-08ce-3cf8-aad1-6179a45eec9f","isApproval":"0","amountCount":1,"brokerageTotalAmount":"6666.00","brokerageOfferedTotalAmount":0,"OfferBy":"","b_commision_way":null,"b_commision_way_text":"","brokers":[{"regbroker_id":"39f77e9f-14cf-4fb3-110e-5eed1c2e8e62","brokerageTotalAmount":"6666.00","brokerageOfferedTotalAmount":0,"brokerages":[{"brokerage":"6666.00","brokerage_offer_status":"未发放","b_regbroker_brokerageId":"3a03197c-c915-b910-8d23-1b8dc23aa66d","isoffer":0,"post_tax_amount":null,"to_deliver_status":0,"brokerage_name":"成交佣金-第1笔","offer_fail_reason":"","withdraw_status":0,"is_entrust_pay":0,"withdraw_status_text":"","delay_at":null,"left_time":"","is_advance_commission":0,"is_advance_commission_text":"非垫佣","offer_on":null,"withdraw_on":null,"arrived_at":"","expire_date":"","penalty":"","contract_url":""}],"broker_name":"B011","broker_tel":"18576421011","cre_no":null,"broGenderText":"男"}],"cst_status":"","check_status":"","store_id":"","hasSyncedBrokerage":0,"brokerageCooperate":false,"tel2":"","tel3":"","tel4":"","identity_type":"1","identity_type_text":"个人","cj_percent":"0%","paid_amount":0,"ispay_sq":"否","receipt_info":[],"report_capacity_des":"老业主000","report_company":"","report_store_name":"","contract_url":"","penalty":"","expire_date":"","arrived_at":""}],"total":"69","isPopup":0,"proTypeByTradeArr":[],"proTypeByMyparamvalue":["全部"],"ProtypeRelationData":["住宅"],"showOfferStatusLevel":0,"commisionWays":[{"key":0,"text":"积分兑换"},{"key":1,"text":"现金支付"},{"key":3,"text":"购房券"}],"hasBindErp":false},"isShow":false,"isDisabled":false}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                            {'retCode': '0', 'retMsg': 'errorCode:0,', 'data': {'data': [{'channel_id': 1, 'CreatedOn': '2022-04-24 11:35:01', 'check_date': '2022-09-15 17:30:55', 'amount': '0.00', 'ApprovalBy': 'mysoftadmin', 'ApprovalOn': '2022-09-16 16:00:43', 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f5f742-4cca-a98a-d392-0b066c6d5d60', 'broker_name': 'chengy', 'broker_tel': '18576426164', 'broGenderText': '女', 'cre_no': '421202199312257045', 'broker_capacity_des': '自由经纪人', 'belongs_company_text': '', 'store_name': '', 'bank_name': '招商银行', 'bank_account': '6225760000008888', 'bank_sub_branch': '招商银行宝安支行', 'bank_address': '广东省深圳市宝安区', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg', 'b_regbroker_cst_projId': '3a036bcf-f3a3-8ba5-7a4a-b4da92e8b7f4', 'store_code': '', 'identity': '9004', 'belongs_company': '', 'clueId': '1074057', 'cst_id': '3a036bcf-f3a3-99d5-9e53-4a638ec357d0', 'cst_name': '沙雕_xdd', 'mobile_tel': '1890723417', 'mobile_tels': '1890723417', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a0652a9-7d41-7e0f-2662-2a6b6701e200', 'cj_price': '6666666.00', 'trade_guid': '3a0652a9-79a0-0826-50ea-22036c33f7df', 'product_type': None, 'room': '奥利给-东区-A1栋-2单元-5-504', 'rg_date': '2022-09-15 00:00:00', 'qy_date': '2022-09-15 00:00:00', 'approve_fail_reason': None, 'trade_amount': '6666666.00', 'room_guid': '049a3b43-d65c-3a48-ba44-7bed9e0d3daa', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f5f742-4cca-a98a-d392-0b066c6d5d60', 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '0.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a0652a9-83bb-5761-9315-4cc29ad9935d', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': 'chengy', 'broker_tel': '18576426164', 'cre_no': '421202199312257045', 'broGenderText': '女'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '自由经纪人', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-01-11 15:58:48', 'check_date': '2022-04-24 15:48:10', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'broker_name': '夜天', 'broker_tel': '15814632003', 'broGenderText': '男', 'cre_no': '110101199003078013', 'broker_capacity_des': '老业主000', 'belongs_company_text': '', 'store_name': '', 'bank_name': 'dasdas', 'bank_account': '51513484462131', 'bank_sub_branch': 'asdadsad', 'bank_address': 'sadasd', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg', 'b_regbroker_cst_projId': '3a015a52-6f41-70ff-1973-635ba59fe8e0', 'store_code': '', 'identity': '9001', 'belongs_company': '', 'clueId': '1059943', 'cst_id': '3a015a52-6f41-a4c9-b7b0-be1be71f359e', 'cst_name': '下发48', 'mobile_tel': '13816184566', 'mobile_tels': '13816184566', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a015a63-8842-f3e6-c3b7-4efc043ea6b9', 'cj_price': '2222222.00', 'trade_guid': '3a015a63-8591-c8f9-d8f3-9dac1d7a6956', 'product_type': None, 'room': '奥利给-宝安区-B252栋-252-8252', 'rg_date': '2022-01-11 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '2222222.00', 'room_guid': '7c63bc2c-9e5c-3933-bf53-b1289449d855', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '1.99', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'brokerageTotalAmount': '1.99', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '1.99', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036cb7-b166-f3d9-b403-17a8eb87dd7e', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': '夜天', 'broker_tel': '15814632003', 'cre_no': '110101199003078013', 'broGenderText': '男'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '老业主000', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-01-11 15:55:26', 'check_date': '2022-04-24 15:43:12', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'broker_name': '夜天', 'broker_tel': '15814632003', 'broGenderText': '男', 'cre_no': '110101199003078013', 'broker_capacity_des': '老业主000', 'belongs_company_text': '', 'store_name': '', 'bank_name': 'dasdas', 'bank_account': '51513484462131', 'bank_sub_branch': 'asdadsad', 'bank_address': 'sadasd', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg', 'b_regbroker_cst_projId': '3a015a4f-599c-4c3d-21f8-f25d5b502e2b', 'store_code': '', 'identity': '9001', 'belongs_company': '', 'clueId': '1059935', 'cst_id': '3a015a4f-599c-b6cb-b15c-4d2519f99e06', 'cst_name': '下发48', 'mobile_tel': '13812471418', 'mobile_tels': '13812471418', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a015e78-0d67-5372-f045-27de463f7dda', 'cj_price': '2222222.00', 'trade_guid': '3a015e78-0af2-2fa4-6f86-fc3d5b57700f', 'product_type': None, 'room': '奥利给-宝安区-B82栋-82-8082', 'rg_date': '2022-01-12 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '2222222.00', 'room_guid': '6a413011-5c8c-30fb-8bbe-d7e062f6b0b5', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '0.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036cb3-25bb-6d09-08f9-8940a9e6a50e', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': '夜天', 'broker_tel': '15814632003', 'cre_no': '110101199003078013', 'broGenderText': '男'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '老业主000', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-01-11 15:51:20', 'check_date': '2022-04-24 14:36:17', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'broker_name': '夜天', 'broker_tel': '15814632003', 'broGenderText': '男', 'cre_no': '110101199003078013', 'broker_capacity_des': '老业主000', 'belongs_company_text': '', 'store_name': '', 'bank_name': 'dasdas', 'bank_account': '51513484462131', 'bank_sub_branch': 'asdadsad', 'bank_address': 'sadasd', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg', 'b_regbroker_cst_projId': '3a015a4b-97ab-a127-73f5-7798745ef981', 'store_code': '', 'identity': '9001', 'belongs_company': '', 'clueId': '1059933', 'cst_id': '3a015a4b-97ab-bfd4-301b-90013f179a7a', 'cst_name': 'qudao', 'mobile_tel': '13816022029', 'mobile_tels': '13816022029', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a015e83-9df0-b791-06db-5b5cac7807ef', 'cj_price': '2222222.00', 'trade_guid': '3a015e83-9bd7-d76c-cabf-749929cbb0a8', 'product_type': None, 'room': '奥利给-东区-A2栋-1单元-8-801', 'rg_date': '2022-01-12 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '2222222.00', 'room_guid': '05d72f73-99f4-3838-b210-1f3dc06daa2b', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '0.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036c75-df9b-f69f-276c-478b368554bb', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': '夜天', 'broker_tel': '15814632003', 'cre_no': '110101199003078013', 'broGenderText': '男'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '老业主000', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-01-11 15:52:55', 'check_date': '2022-04-24 14:36:17', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'broker_name': '夜天', 'broker_tel': '15814632003', 'broGenderText': '男', 'cre_no': '110101199003078013', 'broker_capacity_des': '老业主000', 'belongs_company_text': '', 'store_name': '', 'bank_name': 'dasdas', 'bank_account': '51513484462131', 'bank_sub_branch': 'asdadsad', 'bank_address': 'sadasd', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg', 'b_regbroker_cst_projId': '3a015a4d-0936-2d97-b9e3-11c9ca87baff', 'store_code': '', 'identity': '9001', 'belongs_company': '', 'clueId': '1059934', 'cst_id': '3a015a4d-0936-2bc2-f194-76c42a87f17c', 'cst_name': '下发48', 'mobile_tel': '13814307247', 'mobile_tels': '13814307247', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a015e81-f3e5-7659-936c-767ccf701294', 'cj_price': '2222222.00', 'trade_guid': '3a015e81-eff1-8791-0fa1-c6c2f8a3156b', 'product_type': None, 'room': '奥利给-东区-A2栋-1单元-2-204', 'rg_date': '2022-01-12 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '2222222.00', 'room_guid': '00386b96-8c1c-3bc1-a69a-5a7cdd54e958', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '0.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036c75-e24b-5288-8ee4-f97709b330ff', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': '夜天', 'broker_tel': '15814632003', 'cre_no': '110101199003078013', 'broGenderText': '男'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '老业主000', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-01-11 15:50:26', 'check_date': '2022-04-24 14:36:16', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'broker_name': '夜天', 'broker_tel': '15814632003', 'broGenderText': '男', 'cre_no': '110101199003078013', 'broker_capacity_des': '老业主000', 'belongs_company_text': '', 'store_name': '', 'bank_name': 'dasdas', 'bank_account': '51513484462131', 'bank_sub_branch': 'asdadsad', 'bank_address': 'sadasd', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/qmyxfrontend%2F202009%2F2020092211%2Ffile_39f7c5f3-e059-463b-10dc-d2f71ad4f107.jpg', 'b_regbroker_cst_projId': '3a015a4a-c6c6-c708-d4a6-822091ef0267', 'store_code': '', 'identity': '9001', 'belongs_company': '', 'clueId': '1059932', 'cst_id': '3a015a4a-c6c6-e406-30ac-ff20b18c841e', 'cst_name': 'qudao', 'mobile_tel': '13816209543', 'mobile_tels': '13816209543', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a015e86-170b-20b9-1929-909455cc8c9d', 'cj_price': '2222222.00', 'trade_guid': '3a015e86-1575-e8af-b492-151118987c09', 'product_type': None, 'room': '奥利给-东区-A2栋-1单元-1-102', 'rg_date': '2022-01-12 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '2222222.00', 'room_guid': '081e58a3-ac33-32a0-b5f0-9a7462bcfebf', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f71c03-363d-727a-adc7-cb3cba84d72c', 'brokerageTotalAmount': '0.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '0.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036c75-dccc-19bd-39ff-9c0aed310b51', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': '夜天', 'broker_tel': '15814632003', 'cre_no': '110101199003078013', 'broGenderText': '男'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '老业主000', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-01-11 10:31:20', 'check_date': '2022-04-24 14:36:15', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39e6e5e4-c1cf-806e-0204-c1453ae39ae2', 'broker_name': '公融', 'broker_tel': '15580841111', 'broGenderText': '男', 'cre_no': '445122198812290012', 'broker_capacity_des': '自由经纪人', 'belongs_company_text': '', 'store_name': '', 'bank_name': '交通银行', 'bank_account': '6333333333333333333', 'bank_sub_branch': '深圳', 'bank_address': '广东深圳', 'card_img': 'https://test-qmyxcg.myscrm.cn/uploads/vkcypj1415069022/5003/2016/03/31/39d6dedd-f36c-4105-3898-aa26fc7cc754_bank.jpg', 'b_regbroker_cst_projId': '3a015926-9ea3-1522-b726-82c0cd1b8604', 'store_code': '', 'identity': '9004', 'belongs_company': '', 'clueId': '1059894', 'cst_id': '3a015926-9ea3-7fe6-3ce2-d4e0f974ce35', 'cst_name': '沙雕_4wx', 'mobile_tel': '18907213030', 'mobile_tels': '18907213030', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a017edc-fe3a-1f90-c21c-a8d103d9eea8', 'cj_price': '2222222.00', 'trade_guid': '3a017edc-fac9-7b75-ff61-f9c4d7bb0ffb', 'product_type': None, 'room': '奥利给-东区-A2栋-2单元-1-103', 'rg_date': '2022-01-18 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '2222222.00', 'room_guid': '5d480dfa-cccd-3c23-9149-7259a82d89bf', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '1999.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39e6e5e4-c1cf-806e-0204-c1453ae39ae2', 'brokerageTotalAmount': '1999.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '1999.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036c75-d83c-6691-7c35-8f9c4aae13bf', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': '公融', 'broker_tel': '15580841111', 'cre_no': '445122198812290012', 'broGenderText': '男'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '自由经纪人', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-01-12 11:35:55', 'check_date': '2022-04-24 14:36:15', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f5f742-4cca-a98a-d392-0b066c6d5d60', 'broker_name': 'chengy', 'broker_tel': '18576426164', 'broGenderText': '女', 'cre_no': '421202199312257045', 'broker_capacity_des': '自由经纪人', 'belongs_company_text': '', 'store_name': '', 'bank_name': '招商银行', 'bank_account': '6225760000008888', 'bank_sub_branch': '招商银行宝安支行', 'bank_address': '广东省深圳市宝安区', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg', 'b_regbroker_cst_projId': '3a015e88-1c09-c24c-a375-2b0bbeb78475', 'store_code': '', 'identity': '9004', 'belongs_company': '', 'clueId': '1059962', 'cst_id': '3a015e88-1c09-dc41-52b8-1961c6d39601', 'cst_name': '祁护摘', 'mobile_tel': '15012397568', 'mobile_tels': '15012397568', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a015e88-38de-f8e1-35bf-3e2c2950284e', 'cj_price': '2222222.00', 'trade_guid': '3a015e88-3643-527d-766e-f8c1f0072b1b', 'product_type': None, 'room': '奥利给-东区-A2栋-1单元-2-202', 'rg_date': '2022-01-12 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '2222222.00', 'room_guid': '1758d756-bbe1-3161-a3f7-3605e83eb5e7', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '1999.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f5f742-4cca-a98a-d392-0b066c6d5d60', 'brokerageTotalAmount': '1999.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '1999.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036c75-daed-189c-bef4-cb6cb5b22635', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': 'chengy', 'broker_tel': '18576426164', 'cre_no': '421202199312257045', 'broGenderText': '女'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '自由经纪人', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2021-11-30 10:46:45', 'check_date': '2022-04-24 14:36:11', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f5f742-4cca-a98a-d392-0b066c6d5d60', 'broker_name': 'chengy', 'broker_tel': '18576426164', 'broGenderText': '女', 'cre_no': '421202199312257045', 'broker_capacity_des': '自由经纪人', 'belongs_company_text': '', 'store_name': '', 'bank_name': '招商银行', 'bank_account': '6225760000008888', 'bank_sub_branch': '招商银行宝安支行', 'bank_address': '广东省深圳市宝安区', 'card_img': 'https://ci-yunketest.oss-cn-shenzhen.aliyuncs.com/bankCard_2020071039f5f742-4cca-a98a-d392-0b066c6d5d60305.jpg', 'b_regbroker_cst_projId': '3a0080e9-a54c-d7f0-2cf2-792c8fb9ead2', 'store_code': '', 'identity': '9004', 'belongs_company': '', 'clueId': '1058387', 'cst_id': '3a0080e9-a54c-9c19-b8ca-d8eed6514b9a', 'cst_name': '亢孕衰', 'mobile_tel': '16869153074', 'mobile_tels': '16869153074', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a02a42e-26aa-c13d-8d54-cefd7a51b4fe', 'cj_price': '90000.00', 'trade_guid': '3a02a42e-24d9-e939-d0c3-2738cb5e9883', 'product_type': None, 'room': '奥利给-东区-A1栋-1单元-7-701', 'rg_date': '2022-03-16 00:00:00', 'qy_date': None, 'approve_fail_reason': None, 'trade_amount': '90000.00', 'room_guid': '83acbf74-b82e-31da-8620-0a1fd4e693c0', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '1000.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f5f742-4cca-a98a-d392-0b066c6d5d60', 'brokerageTotalAmount': '1000.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '1000.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a036c75-cc1c-6a24-34c7-f9adea070ee2', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': 'chengy', 'broker_tel': '18576426164', 'cre_no': '421202199312257045', 'broGenderText': '女'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '自由经纪人', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}, {'channel_id': 1, 'CreatedOn': '2022-04-01 16:06:17', 'check_date': '2022-04-08 11:55:21', 'amount': '0.00', 'ApprovalBy': '系统自动', 'ApprovalOn': None, 'offerName': '', 'OfferOn': None, 'regbroker_id': '39f77e9f-14cf-4fb3-110e-5eed1c2e8e62', 'broker_name': 'B011', 'broker_tel': '18576421011', 'broGenderText': '男', 'cre_no': None, 'broker_capacity_des': '老业主000', 'belongs_company_text': '', 'store_name': '', 'bank_name': '', 'bank_account': '', 'bank_sub_branch': '', 'bank_address': '', 'card_img': '', 'b_regbroker_cst_projId': '3a02f656-10dd-2c10-9340-6d7f7703388d', 'store_code': '', 'identity': '9001', 'belongs_company': '', 'clueId': '1070515', 'cst_id': '3a02f656-10dd-62d3-cd0a-5b538d2a3295', 'cst_name': '公司级判客_344', 'mobile_tel': '14602787518', 'mobile_tels': '14602787518', 'genderText': '男', 'b_regbroker_cst_trade_recordId': '3a03197c-c362-928a-b727-90200f111e9a', 'cj_price': '111111.00', 'trade_guid': '3a03197b-fa81-1a76-ad49-e6de969ffe50', 'product_type': None, 'room': '奥利给-东区-A2栋-1单元-7-702', 'rg_date': '2022-04-08 00:00:00', 'qy_date': '2022-04-08 00:00:00', 'approve_fail_reason': None, 'trade_amount': '1111111.00', 'room_guid': 'fe2a14e5-08ce-3cf8-aad1-6179a45eec9f', 'isApproval': '0', 'amountCount': 1, 'brokerageTotalAmount': '6666.00', 'brokerageOfferedTotalAmount': 0, 'OfferBy': '', 'b_commision_way': None, 'b_commision_way_text': '', 'brokers': [{'regbroker_id': '39f77e9f-14cf-4fb3-110e-5eed1c2e8e62', 'brokerageTotalAmount': '6666.00', 'brokerageOfferedTotalAmount': 0, 'brokerages': [{'brokerage': '6666.00', 'brokerage_offer_status': '未发放', 'b_regbroker_brokerageId': '3a03197c-c915-b910-8d23-1b8dc23aa66d', 'isoffer': 0, 'post_tax_amount': None, 'to_deliver_status': 0, 'brokerage_name': '成交佣金-第1笔', 'offer_fail_reason': '', 'withdraw_status': 0, 'is_entrust_pay': 0, 'withdraw_status_text': '', 'delay_at': None, 'left_time': '', 'is_advance_commission': 0, 'is_advance_commission_text': '非垫佣', 'offer_on': None, 'withdraw_on': None, 'arrived_at': '', 'expire_date': '', 'penalty': '', 'contract_url': ''}], 'broker_name': 'B011', 'broker_tel': '18576421011', 'cre_no': None, 'broGenderText': '男'}], 'cst_status': '', 'check_status': '', 'store_id': '', 'hasSyncedBrokerage': 0, 'brokerageCooperate': False, 'tel2': '', 'tel3': '', 'tel4': '', 'identity_type': '1', 'identity_type_text': '个人', 'cj_percent': '0%', 'paid_amount': 0, 'ispay_sq': '否', 'receipt_info': [], 'report_capacity_des': '老业主000', 'report_company': '', 'report_store_name': '', 'contract_url': '', 'penalty': '', 'expire_date': '', 'arrived_at': ''}], 'total': '69', 'isPopup': 0, 'proTypeByTradeArr': [], 'proTypeByMyparamvalue': ['全部'], 'ProtypeRelationData': ['住宅'], 'showOfferStatusLevel': 0, 'commisionWays': [{'key': 0, 'text': '积分兑换'}, {'key': 1, 'text': '现金支付'}, {'key': 3, 'text': '购房券'}], 'hasBindErp': False}, 'isShow': False, 'isDisabled': False}
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        json.retCode
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>26480</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>812.04</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>796.737</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
