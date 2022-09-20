@@ -8,3 +8,6 @@ reports
 projects_dir
 local_settings.py
 env
+logs
+reports
+test_new_data

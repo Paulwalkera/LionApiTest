@@ -299,3 +299,8 @@ CORS_ALLOW_CREDENTIALS = True
 
 # 定义存在httprunner工程项目的路径
 PROJECT_DIR = os.path.join(BASE_DIR, 'projects_dir')
+
+try:
+ from .local_settings import *
+except ImportError:
+ pass
