@@ -3,3 +3,4 @@ __pycache__
 db.sqlite3
 venv
 Pipfile.lock
+test_new_data
