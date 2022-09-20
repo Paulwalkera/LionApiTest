@@ -14,7 +14,7 @@ class ConfiguresViewSet(ModelViewSet):
     queryset = Configures.objects.all()
     serializer_class = ConfiguresSerializer
     permission_classes = (permissions.IsAuthenticated, )
-    ordering_fields = ('id', 'name')
+    ordering_fields = ('id', 'name', 'create_time')
 
     def retrieve(self, request, *args, **kwargs):
         config_obj = self.get_object()

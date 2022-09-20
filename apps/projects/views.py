@@ -52,7 +52,7 @@ class ProjectViewSet(NamesMixin, RunMixin, viewsets.ModelViewSet):
 
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['=name', '=leader', '=id']
-    ordering_fields = ['id', 'name', 'leader']
+    ordering_fields = ['id', 'name', 'leader', 'create_time']
 
     permission_classes = [permissions.IsAuthenticated]
 

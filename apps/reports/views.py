@@ -22,6 +22,7 @@ class ReportViewSet(mixins.ListModelMixin,
                     viewsets.GenericViewSet):
     queryset = Reports.objects.all()
     serializer_class = serializers.ReportsModelSerilizer
+    ordering_fields = ['create_time']
     permission_classes = [permissions.IsAuthenticated]
 
     # def list(self, request, *args, **kwargs):

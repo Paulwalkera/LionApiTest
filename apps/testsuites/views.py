@@ -14,6 +14,7 @@ class TestsuitsViewSet(RunMixin, viewsets.ModelViewSet):
 
     queryset = Testsuits.objects.all()
     serializer_class = serializers.TestsuitModelSerializer
+    ordering_fields = ['create_time']
     permission_classes = [permissions.IsAuthenticated]
 
     def get_testcase_qs(self):

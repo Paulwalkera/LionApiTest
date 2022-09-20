@@ -19,6 +19,7 @@ logger = logging.getLogger('dev07')
 class InterfaceViewSet(RunMixin, viewsets.ModelViewSet):
     queryset = Interfaces.objects.all()
     serializer_class = serializers.InterfaceModelSerilizer
+    ordering_fields = ['create_time']
     permission_classes = [permissions.IsAuthenticated]
 
     def list(self, request, *args, **kwargs):

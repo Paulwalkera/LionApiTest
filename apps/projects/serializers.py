@@ -24,7 +24,7 @@ class ProjectModelSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             "create_time": {
                 "read_only": True,
-                "format": "%Y年%m月%d日 %H:%M:%S".encode('unicode_escape').decode('utf8')
+                "format": '%Y-%m-%d %H:%M:%S'
             }
         }
 

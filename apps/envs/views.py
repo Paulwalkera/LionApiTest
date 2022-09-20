@@ -8,6 +8,7 @@ from utils.mixins import NamesMixin
 class EnvsViewSet(NamesMixin, viewsets.ModelViewSet):
     queryset = Envs.objects.all()
     serializer_class = serializers.EnvsModelSerializer
+    ordering_fields = ['create_time']
     permission_classes = [permissions.IsAuthenticated]
 
     def get_serializer_class(self):

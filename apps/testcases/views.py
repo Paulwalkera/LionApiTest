@@ -18,6 +18,7 @@ from utils.mixins import RunMixin
 class TestcasesViewSet(RunMixin, viewsets.ModelViewSet):
     queryset = Testcases.objects.all()
     serializer_class = serializers.TestcaseModelSerializer
+    ordering_fields = ['create_time']
     permission_classes = [permissions.IsAuthenticated]
 
     def retrieve(self, request, *args, **kwargs):

@@ -13,6 +13,7 @@ class DebugTalksViewSet(mixins.ListModelMixin,
 
     queryset = DebugTalks.objects.all()
     serializer_class = serializers.DebugTalksModelSerializer
+    ordering_fields = ['create_time']
     permission_classes = [permissions.IsAuthenticated]
 
     def get_serializer_class(self):
