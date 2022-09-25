@@ -16,6 +16,7 @@ from rest_framework.decorators import action
 from rest_framework import permissions
 from django.conf import settings
 
+from utils.runner import DebugCode
 from .models import Projects
 # from .serializers import ProjectModelSerializer,ProjectsNamesModelSerailizer
 from . import serializers
@@ -79,6 +80,17 @@ class ProjectViewSet(NamesMixin, RunMixin, viewsets.ModelViewSet):
         response = super().retrieve(request, *args, **kwargs)
         response.data = response.data.get('interfaces')
         return response
+
+    @action(methods=['post'], detail=False)
+    def rundebugtalk(self, request, *args, **kwargs):
+        try:
+            code = request.data["code"]
+        except KeyError:
+            return Response({"code": "0100", "success": False, "msg": "请求数据非法"})
+        debug = DebugCode(code)
+        debug.run()
+        resp = {"msg": debug.resp, "success": True, "code": "0001"}
+        return Response(resp)
 
     # @action(methods=['post'], detail=True)
     # def run(self, request, *args, **kwargs):
