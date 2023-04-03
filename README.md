@@ -1,6 +1,6 @@
 ####  💎介绍
 
-​              这是一款提效于API自动化的工具，基于HttpRunner封装的的接口自动化测试平台，主要采用Python+Django+Vue开发，能从0打造所属项目的api自动化，快速上手，搭建落地建设项目接口自动化。
+    这是一款提效于API自动化的工具，基于HttpRunner封装的的接口自动化测试平台，主要采用Python+Django+Vue开发，能从0打造所属项目的api自动化，快速上手，搭建落地建设项目接口自动化。
 
 ![image](https://user-images.githubusercontent.com/67620367/229406903-393be6d9-7ffa-4746-815d-43319d4d5ef5.png)
 
