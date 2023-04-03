@@ -79,7 +79,7 @@ python manage.py
 
 ##### 7.打开浏览器`http://localhost:8866`进入登录页
 
-#### ⭐Docker部署
+#### ⭐ Docker部署
 
 ##### 1.修改.env
 
