@@ -2,6 +2,10 @@
 
 这是一款提效于API自动化的工具，基于HttpRunner封装的的接口自动化测试平台，主要采用Python+Django+Vue开发，能从0打造所属项目的api自动化，快速上手，搭建落地建设项目接口自动化。
 
+#### ⛏ 在线体验
+
+[🎁 快点我](https://github.com/Paulwalkera/LionApiTest-front)
+
 ![image](https://user-images.githubusercontent.com/67620367/229406903-393be6d9-7ffa-4746-815d-43319d4d5ef5.png)
 
 #### 🎉 技术栈
@@ -17,9 +21,6 @@
 
 [🎁 快点我](https://github.com/Paulwalkera/LionApiTest-front)
 
-#### ⛏ 在线体验
-
-[🎁 快点我](https://github.com/Paulwalkera/LionApiTest-front)
 
 #### 🔥 已有功能
 
